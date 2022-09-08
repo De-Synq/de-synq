@@ -101,6 +101,7 @@ p {
 
 p.intro-description {
   margin: 20px 0;
+  max-width: 20em;
 }
 
 a {
@@ -109,6 +110,14 @@ a {
   font-size: 1em;
   font-weight: 400;
   max-width: fit-content;
+}
+
+a.nav-item {
+  color: black;
+  transition: 0.1s ease-out;
+}
+a.nav-item:hover {
+  color: blueviolet;
 }
 
 h1,
@@ -122,12 +131,25 @@ h3 {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
+  align-items: center;
+  padding: 1.5em 2.5em;
+  width: 100vw;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(2px);
 }
-
-div.nav-item {
+.nav-logo {
+  height: auto;
+  width: 200px;
+}
+.nav-item-container {
+  color: black;
   display: flex;
   gap: 40px;
+}
+
+.active {
+  font-weight: 700;
 }
 
 /* main content */
@@ -135,7 +157,13 @@ div.nav-item {
 .intro-container {
   min-height: 100vh;
   height: 100%;
-  padding: 4em 40px;
+  padding: 10em 40px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    110deg,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(61, 210, 204, 1) 48%
+  );
 }
 .intro-content {
   display: flex;

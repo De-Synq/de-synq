@@ -108,6 +108,7 @@ a {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
+  max-width: fit-content;
 }
 
 h1,

@@ -147,6 +147,7 @@ nav {
   position: fixed;
   background: rgba(255, 255, 255, 0.205);
   backdrop-filter: blur(2px);
+  z-index: 1;
 }
 .nav-logo {
   height: auto;
@@ -182,6 +183,9 @@ a.nav-item:hover {
     rgba(255, 255, 255, 1) 48%,
     rgba(115, 142, 239, 1) 48%
   );
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .intro-content {
   display: flex;
@@ -193,6 +197,13 @@ a.nav-item:hover {
   flex-direction: column;
   gap: 10px;
   margin: 30px 0;
+}
+
+.background-image {
+  height: 650px;
+  width: auto;
+  align-self: flex-end;
+  position: relative;
 }
 
 .hero-content {

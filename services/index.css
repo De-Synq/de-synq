@@ -217,6 +217,28 @@ a.nav-item:hover {
   background-color: rgb(234, 234, 234);
 }
 
+.icon-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+  margin: 1em;
+}
+.icon-image {
+  height: 100px;
+  width: 100px;
+}
+
+h3.icon-description {
+  margin-top: 5px;
+}
+
 .hero-content.collaborate {
   color: white;
   background-color: #154fff;

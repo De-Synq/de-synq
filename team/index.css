@@ -211,7 +211,46 @@ a.nav-item:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(234, 234, 234);
 }
+
+/* Team Profile Section */
+
+.team-profile-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875em;
+  max-width: 62em;
+  margin-bottom: 2.5rem;
+}
+
+.team-profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.team-profile-image-container {
+  height: 360px;
+  width: 360px;
+}
+
+/* Join Us Section */
+
+.join-team-button {
+  color: #154fff;
+  outline-style: solid;
+  padding: 10px 20px;
+  transition: all 0.15s ease;
+}
+
+.join-team-button:hover {
+  outline-color: #154fff65;
+  background-color: #154fff65;
+}
+
+/* Collaborate Section */
 
 .hero-content.collaborate {
   color: white;

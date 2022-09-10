@@ -200,10 +200,11 @@ a.nav-item:hover {
 }
 
 .background-image {
-  height: 650px;
-  width: auto;
-  align-self: flex-end;
   position: relative;
+  top: 15vh;
+  right: 0px;
+  /* object-fit: cover; */
+  /* object-position: center center; */
 }
 
 .hero-content {

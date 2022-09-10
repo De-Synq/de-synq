@@ -200,10 +200,11 @@ a.nav-item:hover {
 }
 
 .background-image {
-  height: 650px;
-  width: auto;
-  align-self: flex-end;
   position: relative;
+  top: 15vh;
+  right: 0px;
+  /* object-fit: cover; */
+  /* object-position: center center; */
 }
 
 .hero-content {
@@ -217,11 +218,13 @@ a.nav-item:hover {
 /* Team Profile Section */
 
 .team-profile-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.875em;
   max-width: 62em;
   margin-bottom: 2.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-profile-card {

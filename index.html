@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
     <title>De-Synq</title>
     <meta name="description" content="A digital agency" />
     <!-- favicons -->
@@ -52,58 +51,52 @@
         
       </section>
     </main>
-=======
 
     <!-- favicons -->
 
     <!-- styles/css -->
-
-    <title>De-Synq</title>
-    <meta name="description" content="A digital agency" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <!-- navigation bar -->
-      <nav>
-        <div>
-          <a href="/">De-Synq</a>
-        </div>
-        <div>
-          <a href="/works">Works</a>
-          <a href="/services">Services</a>
-          <a href="/team">Team</a>
-          <a href="/blog">Blog</a>
-        </div>
-      </nav>
-    </header>
+    <nav class="nav">
+      <header class="nav-header">
+        <a href="/" class="nav-header-title">De-Synq</a></h1>
+      </header>
+      <ul class="nav-list">
+        <li><a href="/works/index.html" class="nav-item">Works</a></li>
+        <li><a href="/services/index.html" class="nav-item">Services</a></li>
+        <li><a href="/team/index.html" class="nav-item">Team</a></li>
+        <li><a href="/blog/index.html" class="nav-item">Blog</a></li>
+      </ul>
+      <button class="menu-button" aria-label="menu button">☰</button>
+    </nav>
 
-    <main>
-      <!-- hero section -->
-      <section>
-        <article>
-          <h1>Modern engineering for innovative companies.</h1>
-          <h2>
-            We are passionate about all things React, React Native, and Web3.
-          </h2>
-        </article>
-        <!-- portfolio menu -->
-        <article>
-          <div>
-            <div>
-              <h3>Hyundai</h3>
-            </div>
-            <div>
-              <h3>Spin</h3>
-            </div>
+    <main id="main">
+      <section class="section-hero">
+        <article class="headline hero">
+          <div class="headline-content">
+            <p class="text-lg">
+              <span class="headline-title text-md block"
+                >Modern engineering for innovative companies.</span
+              >
+              <span
+                >We are passionate about all things React, React Native, and
+                Web3.</span
+              >
+            </p>
+            <ul class="list-project">
+              <li><a href="" class="project-item">Ring DNA</a></li>
+              <li><a href="" class="project-item">GEM</a></li>
+            </ul>
           </div>
+          <figure class="headline-figure">
+            <img src="./images/right-hero.png" alt="Naufal Yukafi Ridlo" />
+          </figure>
         </article>
+        
       </section>
     </main>
 
->>>>>>> 5d2e06f (refactor: site structure with main and footer)
-    <footer>
-      <!-- footer -->
-    </footer>
   </body>
 </html>

@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>De-synq Web Page</title>
   </head>
 
@@ -11,25 +22,144 @@
     <header>
       <!-- navigation bar -->
       <nav>
-        <div>
-          <a href="/">De-Synq</a>
+        <div class="nav-logo-container">
+          <a href="/"
+            ><img src="/assets/logo/De-Synq.svg" alt="logo" class="nav-logo"
+          /></a>
         </div>
-        <div>
-          <a href="/works">Works</a>
-          <a href="/services">Services</a>
-          <a href="/team">Team</a>
-          <a href="/blog">Blog</a>
+        <div class="nav-item-container">
+          <a class="nav-item" href="/works">Works</a>
+          <a class="nav-item active" href="/services">Services</a>
+          <a class="nav-item" href="/team">Team</a>
+          <a class="nav-item" href="/blog">Blog</a>
         </div>
       </nav>
     </header>
     <!-- hero section -->
-    <section>
-      <article>
-        <h1>Modern engineering for innovative companies.</h1>
-        <h2>
-          We are passionate about all things React, React Native, and Web3.
-        </h2>
-      </article>
-      <!-- protfolio menu -->
+    <main class="hero-section">
+      <section class="intro-container">
+        <article class="intro-content">
+          <h1>Pushing Technology Forward</h1>
+          <p class="intro-description">
+            Pragmatic, integrated, and sustainable decision making. We bridge
+            the gap between engineering and product.
+          </p>
+          <div class="intro-services">
+            <a href="#frontend-section"><i class="las la-code"></i> Frontend</a>
+            <a href="#backend-section"><i class="las la-code"></i> Backend</a>
+          </div>
+        </article>
+        <div>
+          <img
+            src="/assets/images/services-background.svg"
+            alt="background image"
+            class="background-image"
+          />
+        </div>
+      </section>
+      <!-- hero content -->
+      <section class="hero-content" id="frontend-section">
+        <div class="description-container">
+          <h2 class="services-title"><i class="las la-code"></i> Frontend</h2>
+          <p>
+            With over 7 years of experience developing React and React Native
+            applications, our expertise covers every facet of development
+            including, product planning, navigation architecture, gestures &
+            animations, charting, server side rendering, CI/CD and performance.
+            We focus on shipping fast and shipping often.
+          </p>
+          <p>
+            While engineering is the focus, product is the outcome. We integrate
+            with product and design to iterate and discover. The magic of
+            delightful apps lies in the successful combination of the two
+            domains.
+          </p>
+        </div>
+      </section>
+
+      <section class="hero-content" id="backend-section">
+        <div class="description-container">
+          <h2 class="services-title"><i class="las la-code"></i> Backend</h2>
+          <p>
+            We build backends in Typescript, either via AWS Lambda, Cloudflare
+            workers, or NodeJS. Being able to share types between backend and
+            frontend is incredibly empowering, allowing for significantly faster
+            iteration on new features and bug free refactors.
+          </p>
+          <p>
+            We support backend applications with integrated dev ops. Depending
+            on the scale and stage of the company, the solutions can vary
+            greatly all the way from Next.js functions to Kubernetes. Our focus
+            is on speed, and the integration of ops and development is key to
+            unlocking fast and stable iterations that provide both platform
+            stability and engineering productivity.
+          </p>
+        </div>
+      </section>
+
+      <section class="hero-content integration">
+        <div class="description-container">
+          <h2 class="services-title">
+            <i class="las la-code"></i> Intergration
+          </h2>
+          <p>
+            We aere highly skilled and knowlegeable in many different languages
+            and tools.
+          </p>
+          <div class="icon-row">
+            <div class="icon-container">
+              <div class="icon-image">
+                <img src="/assets/icons/html-5.png" alt="service icon" />
+              </div>
+              <h3 class="icon-description">HTML</h3>
+            </div>
+            <div class="icon-container">
+              <div class="icon-image">
+                <img src="/assets/icons/css-3.png" alt="service icon" />
+              </div>
+              <h3 class="icon-description">CSS</h3>
+            </div>
+            <div class="icon-container">
+              <div class="icon-image">
+                <img src="/assets/icons/figma.png" alt="service icon" />
+              </div>
+              <h3 class="icon-description">Figma</h3>
+            </div>
+            <div class="icon-container">
+              <div class="icon-image">
+                <img src="/assets/icons/nodejs.png" alt="service icon" />
+              </div>
+              <h3 class="icon-description">NodeJS</h3>
+            </div>
+            <div class="icon-container">
+              <div class="icon-image">
+                <img src="/assets/icons/react.png" alt="service icon" />
+              </div>
+              <h3 class="icon-description">React</h3>
+            </div>
+            <div class="icon-container">
+              <div class="icon-image">
+                <img src="/assets/icons/mongodb.png" alt="service icon" />
+              </div>
+              <h3 class="icon-description">Mongodb</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-content collaborate">
+        <h2 class="services-title collaborate">Ready to Collaborate ?</h2>
+        <a class="collaborate-button" href="">Let's do it</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>© De-Synq 2022</div>
+      <div class="footer-icon">
+        <a href=""><i class="lab la-github footer-icon"></i></a>
+        <a href=""><i class="lab la-twitter footer-icon"></i></a>
+        <a href=""><i class="lab la-linkedin-in footer-icon"></i></a>
+      </div>
+    </footer>
   </body>
 </html>

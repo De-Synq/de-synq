@@ -4,31 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>De-synq Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Team | De-Synq</title>
   </head>
 
   <body>
     <header>
       <!-- navigation bar -->
       <nav>
-        <div>
-          <a href="/">De-Synq</a>
+        <div class="nav-logo-container">
+          <a href="/"
+            ><img src="/assets/logo/De-Synq.svg" alt="logo" class="nav-logo"
+          /></a>
         </div>
-        <div>
-          <a href="/works">Works</a>
-          <a href="/services">Services</a>
-          <a href="/team">Team</a>
-          <a href="/blog">Blog</a>
+        <div class="nav-item-container">
+          <a class="nav-item" href="/works">Works</a>
+          <a class="nav-item" href="/services">Services</a>
+          <a class="nav-item active" href="/team">Team</a>
+          <a class="nav-item" href="/blog">Blog</a>
         </div>
       </nav>
     </header>
     <!-- hero section -->
-    <section>
-      <article>
-        <h1>Modern engineering for innovative companies.</h1>
-        <h2>
-          We are passionate about all things React, React Native, and Web3.
-        </h2>
-      </article>
+    <main>
+      <section class="intro-container">
+        <article class="intro-content">
+          <h1>From Indonesia To You</h1>
+          <p class="intro-description">
+            We believe in building personal relationships and tackle all of our
+            projects with our in-house team.
+          </p>
+          <div class="intro-services">
+            <a href="#our-team"> <i class="las la-code"></i> Meet Our Team </a>
+            <a href="#join-us"><i class="las la-code"></i> Join Us</a>
+          </div>
+        </article>
+        <div>
+          <img
+            src="/assets/images/team-background.svg"
+            alt="background image"
+            class="background-image"
+          />
+        </div>
+      </section>
+      <!-- hero content -->
+      <section class="hero-content" id="our-team">
+        <div class="description-container">
+          <h2 class="services-title">
+            <i class="las la-code"></i> Meet Our Team
+          </h2>
+          <div class="team-profile-container">
+            <div class="team-profile-card">
+              <div class="team-profile-image-container">
+                <img
+                  src="/assets/images/yukafi-profile-picture.jpeg"
+                  alt="yukafi photo"
+                />
+              </div>
+              <h3>Naufal Yukafi Ridlo</h3>
+            </div>
+
+            <div class="team-profile-card">
+              <div class="team-profile-image-container">
+                <img
+                  src="/assets/images/agung-profile-image.jpg"
+                  alt="agung photo"
+                />
+              </div>
+              <h3>Agung Nur Ramadhan</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-content" id="join-us">
+        <div class="description-container">
+          <h2 class="services-title"><i class="las la-code"></i> Join Us</h2>
+          <p>
+            Together we built awesome websites and applications for awesome
+            clients. Not confident ? Worry not! We also ready to guide you in
+            every development process until you can get used to the work flow.
+          </p>
+          <a class="join-team-button" href="">Okay, I'm in!</a>
+        </div>
+      </section>
+      <section class="hero-content collaborate">
+        <h2 class="services-title collaborate">Ready to Collaborate ?</h2>
+        <a class="collaborate-button" href="">Let's do it</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>© De-Synq 2022</div>
+      <div class="footer-icon">
+        <a href=""><i class="lab la-github footer-icon"></i></a>
+        <a href=""><i class="lab la-twitter footer-icon"></i></a>
+        <a href=""><i class="lab la-linkedin-in footer-icon"></i></a>
+      </div>
+    </footer>
   </body>
 </html>

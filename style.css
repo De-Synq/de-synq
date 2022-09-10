@@ -76,6 +76,10 @@ select {
 
 /* Page CSS */
 
+:root {
+  --color-brand: #1e807d;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -110,7 +114,7 @@ p.intro-description {
 }
 
 a {
-  color: #3dd2cc;
+  color: var(--color-brand);
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
@@ -124,7 +128,7 @@ h3 {
 }
 
 i {
-  color: #3dd2cc;
+  color: var(--color-brand);
 }
 
 footer {
@@ -192,11 +196,16 @@ a.nav-item:hover {
   flex-direction: column;
   max-width: 45%;
 }
+
 .intro-services {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 30px 0;
+}
+
+.intro-services a {
+  font-size: 1.25em;
 }
 
 .background-image {

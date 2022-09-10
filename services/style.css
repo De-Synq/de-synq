@@ -153,16 +153,22 @@ nav {
   height: auto;
   width: 200px;
 }
+
 .nav-item-container {
   color: black;
   display: flex;
   gap: 40px;
 }
 
+/* .nav-item-container a {} */
+
 a.nav-item {
   color: black;
   transition: all 0.15s ease;
 }
+
+/* .nav-item-container a:hover {} */
+
 a.nav-item:hover {
   color: blueviolet;
 }

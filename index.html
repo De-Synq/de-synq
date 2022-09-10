@@ -4,56 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- favicons -->
-
-    <!-- styles/css -->
-
-    <title>De-Synq</title>
-    <meta name="description" content="A digital agency" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>De-synq Web Page</title>
   </head>
 
   <body>
     <header>
       <!-- navigation bar -->
       <nav>
-        <div>
-          <a href="/">De-Synq</a>
+        <div class="nav-logo-container">
+          <a href="/"
+            ><img src="/assets/logo/De-Synq.svg" alt="logo" class="nav-logo"
+          /></a>
         </div>
-        <div>
-          <a href="/works">Works</a>
-          <a href="/services">Services</a>
-          <a href="/team">Team</a>
-          <a href="/blog">Blog</a>
+        <div class="nav-item-container">
+          <a class="nav-item" href="/works">Works</a>
+          <a class="nav-item active" href="/services">Services</a>
+          <a class="nav-item" href="/team">Team</a>
+          <a class="nav-item" href="/blog">Blog</a>
         </div>
       </nav>
     </header>
-
-    <main>
-      <!-- hero section -->
-      <section>
-        <article>
+    <!-- hero section -->
+    <main class="hero-section">
+      <section class="intro-container">
+        <article class="intro-content">
           <h1>Modern engineering for innovative companies.</h1>
-          <h2>
+          <p class="intro-description">
             We are passionate about all things React, React Native, and Web3.
-          </h2>
-        </article>
-        <!-- portfolio menu -->
-        <article>
-          <div>
-            <div>
-              <h3>Hyundai</h3>
-            </div>
-            <div>
-              <h3>Spin</h3>
-            </div>
+          </p>
+          <div class="intro-services">
+            <a href="/projects/RingDNA/index.html"
+              ><i class="las la-code"></i> Ring DNA</a
+            >
           </div>
         </article>
+        <div>
+          <img
+            src="/assets/images/services-background.svg"
+            alt="background image"
+            class="background-image"
+          />
+        </div>
       </section>
     </main>
-
-    <footer>
-      <!-- footer -->
-    </footer>
   </body>
 </html>

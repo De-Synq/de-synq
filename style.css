@@ -77,7 +77,8 @@ select {
 /* Page CSS */
 
 :root {
-  --color-brand: #1e807d;
+  --color-brand: #922a6e;
+  --color-paragraph: #525252;
 }
 
 body {
@@ -117,7 +118,7 @@ a {
   color: var(--color-brand);
   text-decoration: none;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 500;
   max-width: fit-content;
 }
 
@@ -197,6 +198,14 @@ a.nav-item:hover {
   max-width: 45%;
 }
 
+.intro-description {
+  color: var(--color-paragraph);
+}
+
+.intro-language {
+  color: var(--color-paragraph);
+}
+
 .intro-services {
   display: flex;
   flex-direction: column;
@@ -221,7 +230,7 @@ a.nav-item:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(234, 234, 234);
+  background-color: #eaeaea;
 }
 
 .description-container {

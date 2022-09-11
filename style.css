@@ -248,6 +248,20 @@ a.nav-item:hover {
   width: 360px;
 }
 
+/* Join Us Section */
+
+.join-team-button {
+  color: #154fff;
+  outline-style: solid;
+  padding: 10px 20px;
+  transition: all 0.15s ease;
+}
+
+.join-team-button:hover {
+  outline-color: #154fff65;
+  background-color: #154fff65;
+}
+
 /* Collaborate Section */
 
 .hero-content.collaborate {

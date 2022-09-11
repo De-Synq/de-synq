@@ -141,8 +141,6 @@ footer {
   gap: 20px;
 }
 
-/* navigation bar */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -154,14 +152,15 @@ nav {
   backdrop-filter: blur(2px);
   z-index: 1;
 }
+
 .nav-logo {
   height: auto;
   width: 200px;
 }
+
 .nav-item-container {
   color: black;
   display: flex;
-  gap: 40px;
 }
 
 a.nav-item {
@@ -174,6 +173,15 @@ a.nav-item:hover {
 
 .active {
   font-weight: 700;
+}
+
+/* navigation bar */
+.nav-item-container {
+  display: none;
+}
+
+.intro-services-image {
+  display: none;
 }
 
 /* main content */
@@ -192,10 +200,9 @@ a.nav-item:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .intro-content {
-  display: flex;
-  flex-direction: column;
-  max-width: 45%;
+  max-width: 100%;
 }
 
 .intro-description {
@@ -245,10 +252,11 @@ a.nav-item:hover {
 .project-image-intro {
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .project-image-item {
-  width: 250px;
+  width: 200px;
   margin: 20px auto;
 }
 
@@ -260,7 +268,7 @@ a.nav-item:hover {
 
 .breadcumb {
   color: #fff;
-  font-size: 28px;
+  font-size: 15px;
 }
 
 .breadcumb-link,
@@ -374,4 +382,30 @@ h2.content-title.collaborate {
 .footer-icon {
   font-size: 32px;
   color: #154fff;
+}
+
+/* responsive */
+
+@media (min-width: 670px) {
+  .nav-item-container {
+    display: block;
+  }
+
+  .nav-item {
+    margin: 0 20px;
+  }
+
+  .intro-services-image {
+    display: block;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+  }
+
+  .breadcumb-link {
+    font-size: 36px;
+  }
 }

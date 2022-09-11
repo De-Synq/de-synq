@@ -270,7 +270,7 @@ a.nav-item:hover {
 
 .breadcumb,
 a:hover {
-  color: grey;
+  color: #808080;
 }
 
 /* Team Profile Section */
@@ -314,7 +314,7 @@ a:hover {
 /* Integration Section */
 
 .hero-content.integration {
-  background-color: rgb(234, 234, 234);
+  background-color: #eaeaea;
 }
 
 .icon-row {
@@ -342,7 +342,7 @@ a:hover {
 /* Collaborate Section */
 
 .hero-content.collaborate {
-  color: white;
+  color: #ffffff;
   background-color: #154fff;
   padding: 10em;
 }
@@ -353,7 +353,7 @@ h2.content-title.collaborate {
 }
 
 .collaborate-button {
-  color: white;
+  color: #ffffff;
   outline-style: solid;
   padding: 10px 20px;
   transition: all 0.15s ease;

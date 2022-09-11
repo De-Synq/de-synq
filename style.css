@@ -116,7 +116,7 @@ p.intro-description {
 a {
   color: var(--color-brand);
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   max-width: fit-content;
 }
@@ -210,18 +210,84 @@ a.nav-item:hover {
 
 .background-image {
   position: relative;
-  top: 15vh;
+  top: 40%;
   right: 0px;
-  width: 50em;
-  /* width: 100%; */
-  /* object-fit: cover; */
-  /* object-position: center center; */
+  width: 30em;
 }
 
+/* Hero Content */
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(234, 234, 234);
+}
+
+/* Team Profile Section */
+
+.team-profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875em;
+  max-width: 62em;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.team-profile-image-container {
+  height: 360px;
+  width: 360px;
+}
+
+/* Collaborate Section */
+
+.hero-content.collaborate {
+  color: white;
+  background-color: #154fff;
+  padding: 10em;
+  gap: 2em;
+}
+
+h2.content-title.collaborate {
+  margin: 0;
+  font-size: 3.6em;
+  line-height: 1.3em;
+}
+
+.collaborate-button {
+  color: white;
+  outline-style: solid;
+  padding: 10px 20px;
+  transition: all 0.15s ease;
+}
+
+.collaborate-button:hover {
+  outline-color: rgba(255, 255, 255, 0.446);
+  background-color: rgba(255, 255, 255, 0.446);
+}
+
+.description-container {
+  max-width: 65em;
+  margin-bottom: 8em;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icon {
+  font-size: 32px;
+  color: #154fff;
 }

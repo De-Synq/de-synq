@@ -95,7 +95,7 @@ h2.services-title {
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.0625rem;
-  margin-top: 2.75em;
+  /* margin-top: 2.75em; */
   margin-bottom: 1.25em;
 }
 
@@ -210,18 +210,58 @@ a.nav-item:hover {
 
 .background-image {
   position: relative;
-  top: 40%;
   right: 0px;
   width: 30em;
 }
 
 /* Hero Content */
 .hero-content {
+  padding-top: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(234, 234, 234);
+}
+
+.description-container {
+  max-width: 65em;
+  width: 100%;
+  padding: 0 2em;
+  margin-bottom: 8em;
+}
+
+/* Project Section */
+
+.project-image-intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-image-item {
+  width: 250px;
+  margin: 20px auto;
+}
+
+.breadcumb {
+  padding: 4em;
+  background: black;
+  color: #fff;
+}
+
+.breadcumb {
+  color: #fff;
+  font-size: 28px;
+}
+
+.breadcumb-link,
+.breadcumb-title {
+  color: #fff;
+}
+
+.breadcumb,
+a:hover {
+  color: grey;
 }
 
 /* Team Profile Section */
@@ -262,17 +302,43 @@ a.nav-item:hover {
   background-color: #154fff65;
 }
 
+/* Integration Section */
+
+.hero-content.integration {
+  background-color: rgb(234, 234, 234);
+}
+
+.icon-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+  margin: 1em;
+}
+.icon-image {
+  height: 100px;
+  width: 100px;
+}
+
+.icon-description {
+  margin-top: 5px;
+}
+
 /* Collaborate Section */
 
 .hero-content.collaborate {
   color: white;
   background-color: #154fff;
   padding: 10em;
-  gap: 2em;
 }
 
 h2.content-title.collaborate {
-  margin: 0;
   font-size: 3.6em;
   line-height: 1.3em;
 }
@@ -287,11 +353,6 @@ h2.content-title.collaborate {
 .collaborate-button:hover {
   outline-color: rgba(255, 255, 255, 0.446);
   background-color: rgba(255, 255, 255, 0.446);
-}
-
-.description-container {
-  max-width: 65em;
-  margin-bottom: 8em;
 }
 
 .footer-icon {

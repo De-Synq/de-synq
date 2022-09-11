@@ -20,4 +20,4 @@ Live URLs:
 
 ## Designs
 
-- Figma: ???
+- [Figma](https://www.figma.com/file/4TBoge5ZjjfCP9B6G2KoxR/Company-Profile)
